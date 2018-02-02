@@ -4,6 +4,9 @@
 <head>
   <title>TEST</title>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, scale-to-fit=no">
 </head>
 
 <style>
@@ -21,16 +24,34 @@ body {
   background-color: #7F190B;
   color: white;
 }
+
+.modal-title {
+  color: black;
+}
+
+.modal-body {
+  color: black;
+}
 </style>
 
-<body>
+<body class="container">
+  <div class="jumbotron">
+    <div class="row justify-content-center">
+    <h1>AUSTIN POWERS</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-md-6">
+      <img src="austin.jpg" alt="Austin Powers Smiling">
+    </div>
+    <div class="col-xs-12 col-md-6">
+      <p> Sir Austin Danger Powers, KBE, is a fictional character from the Austin Powers series of films, and is created and portrayed by Mike Myers. He is the protagonist of Austin Powers: International Man of Mystery (1997), The Spy Who Shagged Me (1999) and Austin Powers in Goldmember (2002).
 
-  <div class="image"><img src="austin.jpg" alt="Austin Powers Smiling"></div>
+          He is a womanizing, hard-partying British spy embodying the Swinging London mod culture and hippie culture of the 1960s who, with his nemesis Dr. Evil, was frozen in a cryonics experiment. The series' humor follows his attempts to adjust to the modern world as he continues to try to save it from terrorism.
+      </p>
+    </div>
+  </div>
 
-  <p> Sir Austin Danger Powers, KBE, is a fictional character from the Austin Powers series of films, and is created and portrayed by Mike Myers. He is the protagonist of Austin Powers: International Man of Mystery (1997), The Spy Who Shagged Me (1999) and Austin Powers in Goldmember (2002).
-
-      He is a womanizing, hard-partying British spy embodying the Swinging London mod culture and hippie culture of the 1960s who, with his nemesis Dr. Evil, was frozen in a cryonics experiment. The series' humor follows his attempts to adjust to the modern world as he continues to try to save it from terrorism.
-  </p>
 
   <h1>Movies He's Been In</h1>
 
@@ -56,9 +77,39 @@ body {
   <div class="links">
     <h1 >Sites For Austin Powers</h1>
 
-    <a href="video.html"> <b> Austin Powers Video</b></a>
-    <a href="https://www.biography.com/news/austin-powers-20th-anniversary-trivia"> <i> Biography </i></a>
-    <a href="http://mentalfloss.com/article/63559/27-groovy-facts-about-austin-powers" target="_blank"> Groovy Facts</a>
+    <button type="button" class="btn btn-secondary"><i class="fas fa-video"></i><a href="video.html"> <b> Austin Powers Video</b></a></button>
+    <button type="button" class="btn btn-primary"><i class="fas fa-book"></i><a href="https://www.biography.com/news/austin-powers-20th-anniversary-trivia"> <i> Biography </i></a></button>
+    <button type="button" class="btn btn-success"><i class="fas fa-industry"></i><a href="http://mentalfloss.com/article/63559/27-groovy-facts-about-austin-powers" target="_blank"> Groovy Facts</a></button>
+
+    <!-- Trigger the modal with a button -->
+<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+<h4 class="modal-title">Hello</h4>
+</div>
+<div class="modal-body">
+<p>This is my modal</p>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+</div>
+</div>
+
+</div>
+</div>
   </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+
 </body>
 </html>
